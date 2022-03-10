@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mouseover</title>
+        <script >
+        function setNewImage()
+        {
+            document .getElementById("img1").src="images.jpg";
+            document.getElementById("text").style.display="none";
+            document.getElementById("text1").style.display="block"
+        }
+        function setOldImage()
+        {
+            document .getElementById("img1").src="download.jpg";
+            document.getElementById("text").style.display="block";
+            document.getElementById("text1").style.display="none"
+        }
+            </script>
+            <body>
+                <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()"src="download.jpg" width="300" height="200"/>
+                <h1 id="text" onmouseover="setNewImage()">hi</h1>
+                <h1 id="text1" onmouseout="setOldImage()">hello</h1>
+            </body>
